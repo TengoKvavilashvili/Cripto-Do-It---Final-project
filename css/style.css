@@ -1,0 +1,791 @@
+* {
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   list-style-type: none;
+   box-sizing: border-box;
+}
+
+@font-face {
+   font-family: BreeSerif;
+   src: url(../fonts/BreeSerif-Regular.ttf);
+}
+
+.BackImg {
+   background-image: url(../img/moonFFF.jpg);
+   width: 100%;
+
+}
+
+/*** LOGO ***/
+.HeaderLogo img {
+   width: 144px;
+   height: 32px;
+   display: inline-block;
+   transition: transform 0.3s ease-in-out;
+
+}
+
+.HeaderLogo img:hover {
+   transform: rotate(360deg);
+}
+
+/*** NAV MENU ***/
+.flex {
+   display: flex;
+   justify-content: end;
+   margin-top: -24px;
+}
+
+header {
+   padding: 40px;
+}
+
+header ul {
+   width: 100%;
+}
+
+header ul a {
+   padding: 5px 10px;
+   color: #f6eded;
+   font-family: BreeSerif;
+
+}
+
+header :hover {
+   text-decoration: underline;
+}
+
+.burger {
+   width: 50px;
+   margin-left: 90%;
+   display: none;
+   cursor: pointer;
+   margin-top: -30px;
+}
+
+.burger .line {
+   width: 100%;
+   height: 2px;
+   background-color: #ab8ef6;
+   margin-bottom: 10px;
+
+}
+
+.Login {
+   width: 80px;
+   height: 30px;
+   border: 1px solid #fff1f1;
+   border-radius: 50px;
+   display: flex;
+   padding-left: 14px;
+   margin-top: -8px;
+   margin-right: 12px;
+
+}
+
+.Login:hover {
+   background-color: rgb(146, 125, 233);
+
+}
+
+.Register {
+   width: 100px;
+   height: 30px;
+   border: 1px solid #fff1f1;
+   border-radius: 50px;
+   display: flex;
+   padding-left: 14px;
+   margin-top: -8px;
+
+}
+
+.Register:hover {
+   background-color: rgb(146, 125, 233);
+
+}
+
+/*** MAIN ***/
+.BuySell {
+   width: 700px;
+   text-align: center;
+   font-family: BreeSerif;
+   color: #fff1f1;
+   font-size: 70px;
+   margin: 150px auto;
+}
+
+.JoinNow {
+   font-family: BreeSerif;
+   font-size: 18px;
+   width: 180px;
+   height: 60px;
+   padding-top: 14px;
+   background-color: rgb(146, 125, 233);
+   text-align: center;
+   margin: 50px auto;
+   border-radius: 50px;
+   margin-top: -54px;
+}
+
+.JoinNow a {
+   color: #fff1f1;
+   background-color: rgb(146, 125, 233);
+}
+
+.JoinNow :hover {
+   font-size: 120%;
+   color: rgb(71, 27, 102);
+}
+
+/*** OurFeatures ***/
+
+.OurFeaturesBox {
+   width: 100%;
+   height: 900px;
+   margin-top: 200px;
+   background-image: url(../img/COSMOS111.jpg);
+
+}
+
+.OurFeatures {
+   font-family: BreeSerif;
+   color: #fff1f1;
+   text-align: center;
+   font-size: 50px;
+   padding-top: 100px;
+}
+
+.BOXIMAGE {
+   width: 100px;
+   height: 100px;
+   background-color: #017bfd;
+   border-radius: 50px;
+   margin-left: 100px;
+}
+
+.BOXIMAGE :hover {
+   animation: jump 0.5s ease-in-out;
+}
+
+@keyframes jump {
+   0% {
+      transform: translateY(0);
+   }
+
+   50% {
+      transform: translateY(-10px);
+   }
+
+   100% {
+      transform: translateY(0);
+   }
+}
+
+
+.BOXIMAGE img {
+   width: 50%;
+   overflow: hidden;
+   margin: 25% 25%;
+
+}
+
+.Security {
+   font-family: BreeSerif;
+   color: #fff1f1;
+   margin: 20px 0 20px 46px;
+}
+
+.transactions {
+   width: 300px;
+   text-align: center;
+   font-family: BreeSerif;
+   color: rgb(139, 139, 139);
+   font-size: 18px;
+}
+
+.Section {
+   width: 350px;
+   height: 400px;
+
+}
+
+.Container {
+   display: flex;
+   justify-content: space-around;
+   margin-top: 100px;
+}
+
+/*** FOOTER ***/
+
+.Footer {
+   width: 100%;
+   height: 350px;
+   background-color: #06060d;
+}
+
+.Footer img {
+   width: 100px;
+   height: 60px;
+   margin-left: 260px;
+   margin-top: 40px;
+}
+
+.address {
+   width: 1004px;
+   font-family: BreeSerif;
+   color: #9aa7bc;
+   font-weight: 300;
+   margin: 50px auto;
+}
+
+.Copyright {
+   font-family: BreeSerif;
+   color: #9aa7bc;
+   font-weight: 300;
+   text-align: center;
+}
+
+/*** ABOUT AS CSS STYLE ***/
+
+.AboutBackImg {
+   background-image: url(../img/IL111.jpg);
+   /* height: 1500px; */
+}
+
+.ABOUTAUS {
+   font-family: BreeSerif;
+   font-size: 70px;
+   color: #ffffff;
+   letter-spacing: 4px;
+   display: flex;
+   justify-content: center;
+   margin-top: 100px;
+   margin-bottom: 170px;
+}
+
+.ABOUTASCONTAINER {
+   display: flex;
+}
+
+.ABOUTUSIMG {
+   width: 600px;
+   height: 600px;
+   /* overflow: hidden; */
+   margin-left: 120px;
+
+}
+
+.ABOUTUSIMG img {
+   width: 100%;
+   border-radius: 18px;
+
+}
+
+.AboutAccess {
+   font-family: BreeSerif;
+   color: #ffffff;
+   letter-spacing: 2px;
+   font-size: 50px;
+   width: 446px;
+   margin-left: 100px;
+   margin-bottom: 46px;
+}
+
+.AboutText {
+   /* display: block; */
+}
+
+.AboutMakeCrypto {
+   font-family: BreeSerif;
+   color: #c8c8c8;
+   width: 400px;
+   text-align: center;
+   margin-left: 122px;
+}
+
+.AboutOffering {
+   display: flex;
+}
+
+.Offering {
+   font-family: BreeSerif;
+   color: #ffffff;
+   font-size: 50px;
+   width: 400px;
+   margin-left: 130px;
+   margin-right: 320px;
+   margin-bottom: 130px;
+}
+
+.Secure {
+   font-family: BreeSerif;
+   color: #ffffff;
+   font-size: 20px;
+}
+
+.AboutTransactions {
+   font-family: BreeSerif;
+   color: #c8c8c8;
+   font-weight: 100;
+   width: 444px;
+   margin-bottom: 72px;
+}
+
+.AboutBenefit {
+   font-family: BreeSerif;
+   color: #c8c8c8;
+   font-weight: 100;
+   width: 400px;
+}
+
+
+/*** SERVICES ***/
+
+.Services {
+   font-family: BreeSerif;
+   color: #ffffff;
+   font-size: 70px;
+   letter-spacing: 4px;
+   text-align: center;
+   margin: 100px 0 150px 0;
+}
+
+#ServicesBox {
+   /* background-color: #c80e13; */
+   width: 1200px;
+   height: 1000px;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: 33.33% 33.33% 33.33%;
+   grid-template-rows: 33.33% 33.33% 33.33%;
+   text-align: start;
+}
+
+.ServicesText {
+   font-family: BreeSerif;
+   color: #c8c8c8;
+
+}
+
+.ServicesHead {
+   font-family: BreeSerif;
+   color: #ffffff;
+   font-size: 22px;
+}
+
+.CurrencyBox {
+   display: flex;
+   justify-content: space-around;
+   background-color: #08080f;
+}
+
+.CurrencyMobile img {
+   width: 390px;
+   height: 650px;
+   border-radius: 25px;
+}
+
+.CurrencyHead {
+   font-family: BreeSerif;
+   color: #ffffff;
+   font-size: 50px;
+   margin-top: 140px;
+   width: 400px;
+}
+
+.CurrencyServicesBox {
+   /* display: flex; */
+   width: 300px;
+   margin-top: 104px;
+}
+
+.CurrencyOurServices {
+   font-family: BreeSerif;
+   color: #c8c8c8;
+   margin-bottom: 50px;
+
+}
+
+.CurrencyBeginnersExperts {
+   font-family: BreeSerif;
+   color: #ffffff;
+}
+
+.UltraVerification {
+   font-family: BreeSerif;
+   color: #ffffff;
+   font-size: 50px;
+   text-align: center;
+   margin-top: 60px;
+}
+
+.VerificationHead {
+   font-family: BreeSerif;
+   color: #ffffff;
+   font-size: 26px;
+   text-align: center;
+}
+
+.UltraVerificationBox {
+   display: flex;
+   justify-content: space-evenly;
+   margin: 80px;
+}
+
+.UltraBox {
+   width: 500px;
+   height: 150px;
+   background-color: #08080f;
+   padding: 20px;
+}
+
+.FastBox {
+   width: 500px;
+   height: 150px;
+   background-color: #08080f;
+   padding: 20px;
+}
+
+.ReadMore {
+   font-family: BreeSerif;
+   text-align: center;
+   color: #c8c8c8;
+}
+
+.ReadMore a {
+   color: #ffffff;
+}
+
+/*** About Our Ultra Services ***/
+
+.StatiaServicesBox {
+   display: flex;
+   justify-content: space-evenly;
+   margin: 100px 0 120px 0;
+}
+
+.StatiaText {
+   font-family: BreeSerif;
+   color: #ffffff;
+   font-size: 20px;
+   width: 750px;
+   text-align: center;
+}
+
+/*** About Our Fast Services ***/
+
+.StatiaServicesBox2 {
+   margin: 10% 14% 10% 14%;
+}
+
+.StatiaText2 {
+   font-family: BreeSerif;
+   color: #ffffff;
+   font-size: 20px;
+   width: 1150px;
+   text-align: center;
+}
+
+/*** Contact Us ***/
+
+.slider-container {
+   position: relative;
+   width: 1100px;
+   height: 500px;
+   overflow: hidden;
+   margin: 0 auto;
+   margin-top: 20px;
+}
+
+.slider-container img {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   opacity: 0;
+   transition: opacity 0.5s ease-in-out;
+
+}
+
+.slider-container img:first-child {
+   opacity: 1;
+}
+
+.slider-container .arrow {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 30px;
+   height: 30px;
+   background-color: rgb(54, 7, 111);
+   border-radius: 45%;
+   box-shadow: 0px 0px 5px rgba(67, 63, 63, 0.5);
+   cursor: pointer;
+}
+
+.slider-container .prev {
+   left: 20px;
+}
+
+.slider-container .next {
+   right: 20px;
+}
+
+.ContactUs {
+   font-family: BreeSerif;
+   color: #ffffff;
+   font-size: 60px;
+   text-align: center;
+   margin-top: 40px;
+   margin-bottom: 50px;
+}
+
+.ContactUsBox {
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.ContactUsQuestionBox {
+   width: 250px;
+}
+
+.ContactUsGetIn {
+   font-family: BreeSerif;
+   color: #ffffff;
+   margin-bottom: 20px;
+   font-size: 20px;
+}
+
+.ContactUsQuestion {
+   font-family: BreeSerif;
+   color: #9a9898;
+}
+
+.AddressBox {
+   width: 250px;
+   margin-bottom: 120px;
+}
+
+.ContactUsCryptoDoIt {
+   font-family: BreeSerif;
+   color: #ffffff;
+   margin-bottom: 20px;
+   font-size: 20px;
+}
+
+.ContactUsAddress {
+   font-family: BreeSerif;
+   color: #9a9898;
+}
+
+.ContactPhone {
+   font-family: BreeSerif;
+   color: #ffffff;
+   font-size: 20px;
+   margin-bottom: 6px;
+}
+
+.ContactPhone a {
+   font-family: BreeSerif;
+   color: #ffffff;
+}
+
+.ContactEmail {
+   font-family: BreeSerif;
+   color: #ffffff;
+   font-size: 20px;
+}
+
+.ContactEmail a {
+   font-family: BreeSerif;
+   color: #ffffff;
+}
+
+/*** Contact Us Message Box ***/
+form {
+   background-color: #06060d;
+   border-radius: 10px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+   border: 1px solid #f6eded;
+   padding: 20px;
+   margin-bottom: 60px;
+}
+
+label {
+   display: block;
+   font-weight: bold;
+   margin-bottom: 10px;
+   color: #fff1f1;
+   font-family: BreeSerif;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+   width: 100%;
+   padding: 10px;
+   border: none;
+   border-radius: 5px;
+   margin-bottom: 20px;
+   resize: none;
+
+}
+
+button[type="submit"] {
+   font-family: BreeSerif;
+   background-color: #111165;
+   color: #ffffff;
+   border: none;
+   border-radius: 5px;
+   padding: 10px;
+   cursor: pointer;
+}
+
+/*** Responsive ***/
+
+
+@media (max-width:1200px) {
+   .flex {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .burger {
+      display: block;
+   }
+
+   header {
+      height: 80px;
+      overflow: hidden;
+   }
+
+   header nav {
+      margin-top: 26px;
+   }
+
+   header nav li {
+      margin-bottom: 10px;
+   }
+
+   nav li a {
+      color: #ab8ef6;
+   }
+
+   .Login {
+      margin-left: 12px;
+   }
+
+   .BuySell {
+      margin-top: 250px;
+   }
+
+   .OurFeaturesBox {
+      height: 1450px;
+      background-image: url(../img/sss.jpeg);
+   }
+
+   .Container {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 60px;
+   }
+
+   .Footer {
+      width: 100%;
+
+   }
+
+   .LOGOFOOTER {
+      display: flex;
+      justify-content: center;
+      margin-left: -250px;
+   }
+
+   .address {
+      width: 700px;
+      text-align: center;
+   }
+
+   /*** Responsive For About Us ***/
+
+   .ABOUTUSIMG {
+      margin-bottom: -160px;
+   }
+
+   .ABOUTASCONTAINER {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 100px;
+   }
+
+   .AboutOffering {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 100px;
+   }
+
+   .Offering {
+      margin-left: 390px;
+      margin-bottom: 60px;
+   }
+
+   /*** Responcive For Contact Us ***/
+
+   .slider-container {
+      position: relative;
+      width: 700px;
+      height: 500px;
+      overflow: hidden;
+      margin: 0 auto;
+   }
+
+}
+
+
+
+
+
+@media (max-width:768px) {
+   .BuySell {
+      width: 300px;
+      font-size: 32px;
+   }
+
+   .OurFeaturesBox {
+      width: 100%;
+   }
+
+   .LOGOFOOTER {
+      display: flex;
+      justify-content: center;
+      margin-left: -250px;
+      margin-top: 34px;
+   }
+
+   .address {
+      width: 350px;
+      text-align: center;
+   }
+
+   .Footer {
+      height: 100%;
+      padding-bottom: 20px;
+   }
+
+   /*** Responcive For Contact Us ***/
+
+   .slider-container {
+      position: relative;
+      width: 450px;
+      height: 400px;
+      overflow: hidden;
+      margin: 0 auto;
+   }
+
+   .ContactUsBox {
+      flex-direction: column;
+      align-items: center;
+   }
+}
